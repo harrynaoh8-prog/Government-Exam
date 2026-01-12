@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Government Exam Quiz App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- CATEGORY SELECTION -->
+  <div id="categoryScreen">
+    <h1>Government Exam Quiz</h1>
+    <p>Select a Category</p>
+    <button onclick="startQuiz('gk')">General Knowledge</button>
+    <button onclick="startQuiz('math')">Mathematics</button>
+    <button onclick="startQuiz('reasoning')">Reasoning</button>
+    <button onclick="startQuiz('english')">English</button>
+  </div>
+
+  <!-- QUIZ SCREEN -->
+  <div id="quizScreen" class="hidden">
+    <div class="top-bar">
+      <span id="timer">05:00</span>
+      <div class="progress">
+        <div id="progressBar"></div>
+      </div>
+    </div>
+
+    <h2 id="question"></h2>
+    <div id="options"></div>
+
+    <div class="buttons">
+      <button id="nextBtn">Next</button>
+    </div>
+  </div>
+
+  <!-- RESULT SCREEN -->
+  <div id="resultScreen" class="hidden">
+    <h2>Your Result</h2>
+    <p id="score"></p>
+    <div id="answers"></div>
+    <button onclick="restartQuiz()">Restart Quiz</button>
+  </div>
+
+</div>
+
+<script src="questions.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
