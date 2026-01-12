@@ -2,52 +2,92 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Government Exam Quiz App</title>
+  <title>Government Exam Quiz Platform</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Practice quizzes for Railway, SSC, Banking, Police & State Government exams with timer and explanations">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
+<header class="header">
+  <h1>Government Exam Quiz Platform</h1>
+  <p>Practice Smart • Attempt Fast • Score High</p>
+</header>
 
-  <!-- CATEGORY SELECTION -->
-  <div id="categoryScreen">
-    <h1>Government Exam Quiz</h1>
-    <p>Select a Category</p>
-    <button onclick="startQuiz('gk')">General Knowledge</button>
-    <button onclick="startQuiz('math')">Mathematics</button>
-    <button onclick="startQuiz('reasoning')">Reasoning</button>
-    <button onclick="startQuiz('english')">English</button>
-  </div>
+<main class="container">
 
-  <!-- QUIZ SCREEN -->
-  <div id="quizScreen" class="hidden">
-    <div class="top-bar">
-      <span id="timer">05:00</span>
-      <div class="progress">
-        <div id="progressBar"></div>
-      </div>
+  <!-- ABOUT GOVERNMENT EXAMS -->
+  <section class="card">
+    <h2>📘 Popular Government Exams in India</h2>
+    <ul>
+      <li><b>Railway Exams:</b> NTPC, Group D, ALP, JE</li>
+      <li><b>SSC Exams:</b> CGL, CHSL, MTS, GD Constable</li>
+      <li><b>Banking Exams:</b> IBPS PO, Clerk, SBI PO</li>
+      <li><b>Police Exams:</b> State Police Bharti, CAPF</li>
+      <li><b>State Exams:</b> PCS, Forest Guard, Talathi</li>
+    </ul>
+  </section>
+
+  <!-- EXAM SECTIONS -->
+  <section class="card">
+    <h2>🧠 Exam Sections Covered</h2>
+
+    <div class="section-box">
+      <h3>General Knowledge / General Studies</h3>
+      <p>
+        Covers History, Geography, Polity, Economy, Static GK, Current Affairs.
+        Important for SSC, Railway, Police & State exams.
+      </p>
+      <a href="gk.html" class="btn">Start GK Quiz</a>
     </div>
 
-    <h2 id="question"></h2>
-    <div id="options"></div>
-
-    <div class="buttons">
-      <button id="nextBtn">Next</button>
+    <div class="section-box">
+      <h3>Mathematics (Quantitative Aptitude)</h3>
+      <p>
+        Includes Arithmetic, Algebra, Percentage, Ratio, Profit & Loss,
+        Time & Work, Data Interpretation.
+      </p>
+      <a href="math.html" class="btn">Start Math Quiz</a>
     </div>
-  </div>
 
-  <!-- RESULT SCREEN -->
-  <div id="resultScreen" class="hidden">
-    <h2>Your Result</h2>
-    <p id="score"></p>
-    <div id="answers"></div>
-    <button onclick="restartQuiz()">Restart Quiz</button>
-  </div>
+    <div class="section-box">
+      <h3>Reasoning (Logical & Analytical)</h3>
+      <p>
+        Includes Number Series, Coding-Decoding, Blood Relations,
+        Direction Sense, Puzzles, Syllogism.
+      </p>
+      <a href="reasoning.html" class="btn">Start Reasoning Quiz</a>
+    </div>
 
-</div>
+    <div class="section-box">
+      <h3>Science (Physics, Chemistry, Biology)</h3>
+      <p>
+        Focused on Class 6–10 NCERT level science,
+        very important for Railway and Police exams.
+      </p>
+      <a href="science.html" class="btn">Start Science Quiz</a>
+    </div>
+  </section>
 
-<script src="questions.js"></script>
-<script src="script.js"></script>
+  <!-- QUIZ FEATURES -->
+  <section class="card">
+    <h2>🚀 Quiz Features</h2>
+    <ul>
+      <li>⏱️ 15-second timer per question</li>
+      <li>📊 Real-time score tracking</li>
+      <li>✅ Instant correct / wrong feedback</li>
+      <li>📖 Detailed explanation after each question</li>
+      <li>💾 Best score saved automatically</li>
+      <li>📱 Mobile-friendly exam interface</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© 2026 Government Exam Quiz Platform</p>
+  <p>Practice for SSC • Railway • Banking • Police • State Exams</p>
+</footer>
+
 </body>
 </html>
